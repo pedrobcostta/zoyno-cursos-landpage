@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso NR10 2026 - Zoyno | 40h com Certificado Válido</title>
+    <meta name="description" content="Curso NR10 Online Atualizado 2026. 40h de carga horária. Certificado assinado por Engenheira Eletricista e de Segurança. Válido em todo Brasil.">
+    <link rel="canonical" href="https://zoyno.vercel.app/">
+    
+    <!-- Open Graph (Meta/Facebook Ads) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zoyno.vercel.app/">
+    <meta property="og:title" content="Curso NR10 2026 - Zoyno | 40h com Certificado Válido">
+    <meta property="og:description" content="Curso NR10 Online Atualizado 2026. 40h. Certificado por Engenheira. Válido em todo Brasil. Garanta sua vaga.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&h=630&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Zoyno">
+    
+    <!-- Twitter Card (Meta Ads / compartilhamento) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Curso NR10 2026 - Zoyno | 40h com Certificado">
+    <meta name="twitter:description" content="Curso NR10 Online 2026. Certificado válido. CREA/MG. Garanta sua vaga.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&h=630&fit=crop">
+    
+    <!-- Rota para Google Ads: use no anúncio a URL de destino com #interesse para levar o clique direto à página de conversão -->
+    <!-- Ex: https://zoyno.vercel.app/#interesse -->
+    
+    <!-- ÁREA DE RASTREAMENTO (Obrigatório para Ads) -->
+    <!-- Cole aqui seu Google Tag Manager ou Pixel do Facebook -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zoyno: {
+                            DEFAULT: '#a64aec', 
+                            light: '#c06ff5',
+                            dark: '#7e2eb8',
+                            blue: '#2563eb' 
+                        },
+                        dark: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+        }
+        
+        .hero-bg::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .btn-pulse {
+            animation: pulse-purple 2s infinite;
+        }
+        @keyframes pulse-purple {
+            0% { box-shadow: 0 0 0 0 rgba(166, 74, 236, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(166, 74, 236, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(166, 74, 236, 0); }
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #2563eb, #a64aec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(90deg, #2563eb 0%, #a64aec 100%);
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #1d4ed8 0%, #7e2eb8 100%);
+        }
+        
+        .float-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-toggle:checked + label + .faq-content {
+            max-height: 500px;
+        }
+        .faq-toggle:checked + label i {
+            transform: rotate(180deg);
+        }
+    </style>
+    
+    <!-- JSON-LD para Google (Curso + Organização - melhora Quality Score e rich results) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Curso NR10 Básico - Segurança em Eletricidade",
+        "description": "Curso NR10 Online Atualizado 2026. 40h de carga horária. Certificado assinado por Engenheira Eletricista e de Segurança. Válido em todo Brasil.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Zoyno",
+            "url": "https://zoyno.vercel.app"
+        },
+        "educationalLevel": "Profissional",
+        "timeRequired": "PT40H",
+        "inLanguage": "pt-BR",
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "online",
+            "courseWorkload": "PT40H"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "84.99",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zoyno",
+        "url": "https://zoyno.vercel.app",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-34-97400-4873",
+            "contactType": "customer service",
+            "areaServed": "BR"
+        }
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-slate-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center cursor-pointer" onclick="navigateTo('home')">
+                    <img src="Design sem nome (2).png" alt="Zoyno Logo" class="h-12 w-auto object-contain mr-2" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+                    <span id="logo-text" class="hidden font-display text-2xl font-bold tracking-tight text-gradient">
+                        Zoyno
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="javascript:void(0)" onclick="scrollToSection('beneficios')" class="text-gray-600 hover:text-zoyno font-medium transition">Benefícios</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('conteudo')" class="text-gray-600 hover:text-zoyno font-medium transition">O Curso</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('instrutora')" class="text-gray-600 hover:text-zoyno font-medium transition">Instrutora</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('faq')" class="text-gray-600 hover:text-zoyno font-medium transition">Dúvidas</a>
+                </div>
+                <div>
+                    <!-- Rota #interesse para Google Ads / Meta Ads (URL de destino do anúncio) -->
+                    <a href="#interesse" class="bg-white border-2 border-zoyno text-zoyno hover:bg-zoyno hover:text-white font-bold py-2 px-6 rounded-full transition inline-flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Falar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN PAGE CONTENT (HOME) -->
+    <div id="home-page">
+        <!-- Hero Section -->
+        <header class="hero-bg min-h-screen flex items-center relative pt-28 pb-20 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Coluna da Esquerda: Texto -->
+                    <div class="text-center md:text-left">
+                        <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-zoyno-light font-semibold py-1 px-4 rounded-full text-sm uppercase tracking-wide mb-6 inline-block">
+                            <i class="fa-solid fa-check-double mr-2"></i> Atualizado 2026
+                        </span>
+                        <h1 class="font-display text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                            Curso NR10 <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-zoyno-light">40 Horas Certificado</span>
+                        </h1>
+                        <p class="text-lg text-gray-300 mb-8 max-w-lg mx-auto md:mx-0 font-light leading-relaxed">
+                            Regularize-se com a <strong>Zoyno</strong>. Vídeo aulas + Material didático completo. Certificado assinado por Engenheira Responsável.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <!-- Rota #interesse para Google Ads (clique no anúncio) -->
+                            <a href="#interesse" 
+                               class="btn-pulse btn-gradient text-white text-lg font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:scale-105 inline-flex items-center justify-center gap-2">
+                                GARANTIR VAGA
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <div class="flex items-center justify-center gap-4 text-gray-400 text-sm mt-2 sm:mt-0">
+                                <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> CREA/MG Ativo</div>
+                                <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Válido MTE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna da Direita: Imagem -->
+                    <div class="relative hidden md:block">
+                        <div class="absolute -top-10 -right-10 w-72 h-72 bg-zoyno/30 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-600/30 rounded-full blur-3xl"></div>
+                        
+                        <div class="relative bg-white/5 backdrop-blur-sm p-3 rounded-3xl border border-white/10 shadow-2xl float-image">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Eletricista Profissional em ação" 
+                                 class="rounded-2xl w-full h-auto object-cover shadow-lg">
+                            
+                            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 border border-gray-100">
+                                <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center text-green-600">
+                                    <i class="fa-solid fa-user-graduate text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wide">Atualização</p>
+                                    <p class="text-base font-bold text-gray-900">2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem Mobile -->
+                    <div class="md:hidden mt-8 relative">
+                         <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Eletricista Profissional" 
+                                 class="rounded-2xl w-full shadow-2xl border-4 border-white/10">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wave Divider -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+                <svg class="relative block w-full h-[60px] md:h-[100px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="#f8fafc" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </header>
+
+        <!-- Benefits Section -->
+        <section id="beneficios" class="py-20 bg-slate-50 relative z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-4xl font-bold text-dark-900 mb-4">Destaques do Curso</h2>
+                    <div class="w-20 h-1.5 bg-gradient-to-r from-zoyno-blue to-zoyno mx-auto rounded-full"></div>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Revalide sua NR10 a cada 2 anos, mantendo-se sempre atualizado e em conformidade com as exigências legais.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 group">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-zoyno group-hover:text-white transition-colors duration-300 text-zoyno-blue">
+                            <i class="fa-solid fa-clock text-3xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3 text-dark-900">40 Horas de Carga</h3>
+                        <p class="text-gray-600">Conforme estabelecido na NR10. Tão válido quanto um curso presencial.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 group">
+                        <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-zoyno group-hover:text-white transition-colors duration-300 text-zoyno">
+                            <i class="fa-solid fa-play-circle text-3xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3 text-dark-900">Vídeo Aulas + Material</h3>
+                        <p class="text-gray-600">Combinação ideal entre teoria e prática. Conteúdo detalhado e direto ao ponto com exemplos do dia a dia.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 group">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-zoyno group-hover:text-white transition-colors duration-300 text-zoyno-blue">
+                            <i class="fa-solid fa-file-contract text-3xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3 text-dark-900">Atualizado 2026</h3>
+                        <p class="text-gray-600">Conteúdo rigorosamente alinhado com a Portaria nº 598/2004 e Nota Técnica 54/2018.</p>
+                    </div>
+                </div>
+                
+                <!-- Target Audience -->
+                <div class="mt-16 bg-white rounded-3xl p-8 shadow-sm border border-gray-100 text-center">
+                    <h3 class="font-bold text-gray-900 text-lg mb-4">Este curso é voltado para:</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 text-sm font-medium"><i class="fa-solid fa-bolt mr-2 text-zoyno"></i>Eletricistas Industriais</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 text-sm font-medium"><i class="fa-solid fa-house mr-2 text-zoyno"></i>Eletricistas Prediais</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 text-sm font-medium"><i class="fa-solid fa-gears mr-2 text-zoyno"></i>Técnicos em Eletrotécnica</span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-full text-gray-700 text-sm font-medium"><i class="fa-solid fa-hard-hat mr-2 text-zoyno"></i>Engenheiros Eletricistas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Section -->
+        <section id="instrutora" class="py-16 bg-white border-y border-gray-100">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+                <div class="bg-white rounded-3xl border border-gray-100 p-8 md:p-12 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-zoyno/5 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center space-x-2 bg-zoyno-light/10 text-zoyno rounded-full px-3 py-1 text-sm font-medium mb-6">
+                            <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-zoyno opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-zoyno"></span>
+                            </span>
+                            <span>Registro Ativo CREA/MG e CONFEA</span>
+                        </div>
+                        
+                        <h2 class="font-display text-3xl font-bold text-dark-900 mb-2">Conheça sua Instrutora</h2>
+                        <h3 class="text-xl text-zoyno font-semibold mb-8">Engenheira Eletricista e de Segurança do Trabalho</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                            <div class="space-y-4 text-gray-600 leading-relaxed text-left">
+                                <p>
+                                    A Responsável Técnica pelo curso possui <strong>Pós Graduação em Gestão de Projetos</strong> e <strong>Gerenciamento de Manutenção</strong>, além de ser graduanda em Engenharia Civil e Mecânica.
+                                </p>
+                                <p>
+                                    Atua como Engenheira Eletricista na área industrial há <strong>6 anos</strong>, vivenciando diariamente questões relativas à Segurança do Trabalho. Essa experiência prática transborda nos conteúdos, associando sempre a teoria à realidade do mercado.
+                                </p>
+                            </div>
+                            
+                            <div class="flex flex-col justify-center space-y-4">
+                                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center">
+                                    <div class="bg-zoyno/10 w-10 h-10 rounded-full flex items-center justify-center text-zoyno mr-4 shrink-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm text-gray-500">Credenciamento</div>
+                                        <div class="font-bold text-gray-900">NR10, NR35, NR33 e SEP</div>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center">
+                                     <div class="bg-zoyno/10 w-10 h-10 rounded-full flex items-center justify-center text-zoyno mr-4 shrink-0">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm text-gray-500">Impacto</div>
+                                        <div class="font-bold text-gray-900">+800 Profissionais Autorizados</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Urgency/Content Strip -->
+        <section id="conteudo" class="py-20 bg-dark-900 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-zoyno opacity-20 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-blue-600 opacity-20 rounded-full blur-[100px]"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="font-display text-4xl font-bold mb-8">Conteúdo Programático</h2>
+                    <p class="text-gray-400 mb-6">Repleto de exemplos práticos para melhor absorção da teoria.</p>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                            <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                            <span>Segurança em instalações e serviços em eletricidade</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                            <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                            <span>Riscos e Medidas de Controle</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                            <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                            <span>Primeiros socorros e combate a incêndio</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                            <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                            <span>Atualizado portarias e decretos 2026</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-5/12 w-full">
+                    <div class="bg-white text-dark-900 rounded-3xl p-8 shadow-2xl relative overflow-hidden border border-gray-100">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-zoyno"></div>
+                        
+                        <div class="text-center mb-8">
+                            <span class="inline-block py-1 px-3 rounded-full bg-red-100 text-red-600 text-xs font-bold uppercase tracking-wider mb-2">Oferta Relâmpago</span>
+                            <h3 class="font-display text-2xl font-bold text-gray-800">Curso NR10 Básico</h3>
+                            <div class="mt-4 flex justify-center items-end gap-2">
+                                <span class="text-gray-400 line-through text-xl decoration-red-500">R$ 169,90</span>
+                                <div class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-dark-900 to-zoyno leading-none">
+                                    <span class="text-3xl text-dark-900 align-top">R$</span>84<span class="text-3xl text-dark-900">,99</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-sm mt-2">Pagamento único • Sem mensalidades</p>
+                        </div>
+                        
+                        <!-- Rota #interesse para conversão (Google Ads / Meta Ads) -->
+                        <a href="#interesse" class="w-full block bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl text-center transition shadow-lg hover:shadow-green-500/30 mb-4 text-lg">
+                            <i class="fa-brands fa-whatsapp mr-2"></i> COMPRAR AGORA
+                        </a>
+                        
+                        <div class="flex justify-center gap-4 text-gray-400 text-2xl mt-6 border-t pt-6">
+                            <i class="fa-brands fa-pix hover:text-zoyno transition" title="Pix"></i>
+                            <i class="fa-brands fa-cc-mastercard hover:text-zoyno transition" title="Mastercard"></i>
+                            <i class="fa-brands fa-cc-visa hover:text-zoyno transition" title="Visa"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats/Trust -->
+        <section class="py-16 bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+                    <div>
+                        <div class="text-4xl font-extrabold text-zoyno mb-2">+800</div>
+                        <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Profissionais Treinados</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-extrabold text-zoyno-blue mb-2">100%</div>
+                        <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">EAD Válido</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-extrabold text-zoyno mb-2">40h</div>
+                        <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Carga Horária</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-extrabold text-zoyno-blue mb-2">4.9</div>
+                        <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Estrelas no Google</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 bg-gray-50">
+            <div class="max-w-3xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl font-bold text-dark-900 mb-2">Dúvidas Frequentes</h2>
+                    <p class="text-gray-500">Tudo o que você precisa saber antes de começar.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                        <input type="checkbox" id="faq1" class="faq-toggle hidden">
+                        <label for="faq1" class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-bold text-gray-800">O certificado é reconhecido e válido?</span>
+                            <i class="fa-solid fa-chevron-down text-zoyno transition-transform duration-300"></i>
+                        </label>
+                        <div class="faq-content bg-gray-50 px-5 text-gray-600">
+                            <p class="pb-5">Sim! Nosso certificado é assinado por Engenheira Eletricista e de Segurança do Trabalho com registro ativo no CREA/MG, possuindo validade em todo território nacional conforme as exigências do MTE.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                        <input type="checkbox" id="faq2" class="faq-toggle hidden">
+                        <label for="faq2" class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-bold text-gray-800">Em quanto tempo recebo o certificado?</span>
+                            <i class="fa-solid fa-chevron-down text-zoyno transition-transform duration-300"></i>
+                        </label>
+                        <div class="faq-content bg-gray-50 px-5 text-gray-600">
+                            <p class="pb-5">O certificado é liberado imediatamente após a conclusão do curso e aprovação na avaliação final.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                        <input type="checkbox" id="faq3" class="faq-toggle hidden">
+                        <label for="faq3" class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-bold text-gray-800">Qual a validade do curso?</span>
+                            <i class="fa-solid fa-chevron-down text-zoyno transition-transform duration-300"></i>
+                        </label>
+                        <div class="faq-content bg-gray-50 px-5 text-gray-600">
+                            <p class="pb-5">Conforme a norma, a reciclagem deve ser feita a cada 2 anos (bienal) ou sempre que houver troca de função ou mudança na empresa.</p>
+                        </div>
+                    </div>
+                    
+                     <!-- FAQ Item 4 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                        <input type="checkbox" id="faq4" class="faq-toggle hidden">
+                        <label for="faq4" class="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition">
+                            <span class="font-bold text-gray-800">Quais as formas de pagamento?</span>
+                            <i class="fa-solid fa-chevron-down text-zoyno transition-transform duration-300"></i>
+                        </label>
+                        <div class="faq-content bg-gray-50 px-5 text-gray-600">
+                            <p class="pb-5">Aceitamos PIX (com liberação imediata) e cartões de crédito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- END HOME PAGE -->
+
+    <!-- INTEREST PAGE (New: For Google Ads Conversion Flow) -->
+    <div id="interest-page" class="hidden bg-slate-50 min-h-screen pt-24 pb-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <button onclick="navigateTo('home')" class="mb-6 flex items-center text-zoyno font-bold hover:text-zoyno-dark transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Voltar
+            </button>
+            
+            <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+                <!-- Header Card -->
+                <div class="bg-dark-900 p-8 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-zoyno opacity-20 rounded-full blur-3xl -mr-10 -mt-10"></div>
+                    <span class="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Última Etapa</span>
+                    <h1 class="font-display text-2xl md:text-3xl font-bold text-white mb-2">Confirme seu interesse</h1>
+                    <p class="text-gray-400">Você está a um passo de garantir sua vaga.</p>
+                </div>
+
+                <!-- Product Summary -->
+                <div class="p-8 md:p-10">
+                    <div class="flex flex-col md:flex-row gap-6 mb-8 border-b border-gray-100 pb-8">
+                        <div class="w-full md:w-32 h-32 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-4xl shrink-0">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Curso NR10 Básico - 40 Horas</h3>
+                            <ul class="space-y-2 text-gray-600 text-sm mb-4">
+                                <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> Certificado Válido (Assinado por Eng.)</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> Acesso Imediato e Vitalício</li>
+                                <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> Garantia de 7 Dias</li>
+                            </ul>
+                        </div>
+                        <div class="text-right">
+                             <span class="block text-sm text-gray-400 line-through">R$ 169,90</span>
+                             <span class="block text-3xl font-bold text-zoyno">R$ 84,99</span>
+                             <span class="block text-xs text-green-600 font-bold">50% OFF</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Principal -->
+                    <div class="text-center space-y-4">
+                        <a href="https://wa.me/5534974004873?text=Olá,%20gostaria%20de%20confirmar%20minha%20inscrição%20no%20curso%20NR10%20com%20desconto." 
+                           target="_blank"
+                           class="w-full block bg-green-500 hover:bg-green-600 text-white font-bold py-5 rounded-xl shadow-lg transition transform hover:scale-[1.02] text-xl flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> CONFIRMAR E FALAR NO WHATSAPP
+                        </a>
+                        <p class="text-xs text-gray-500 flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-lock"></i> Ambiente Seguro. Atendimento humano.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Trust Footer -->
+                <div class="bg-gray-50 p-6 flex justify-center gap-6 text-gray-400 text-xl border-t border-gray-100">
+                     <i class="fa-brands fa-pix" title="Pix"></i>
+                     <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                     <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="sobre" class="bg-gray-900 text-gray-300 pt-16 pb-24 md:pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center mb-6 cursor-pointer" onclick="navigateTo('home')">
+                        <!-- Logo no rodapé -->
+                         <img src="Design sem nome (2).png" alt="Zoyno Logo" class="h-10 w-auto mr-2 opacity-90" onerror="this.style.display='none'; document.getElementById('footer-logo-text').style.display='block'">
+                         <span id="footer-logo-text" class="hidden font-display text-2xl font-bold text-white">Zoyno</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">A Zoyno é especialista em treinamentos normativos. Nosso compromisso é com a sua segurança e evolução na carreira.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Fale Conosco</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-whatsapp w-6 text-zoyno"></i> 
+                            <a href="https://wa.me/5534974004873" class="hover:text-white transition">(34) 97400-4873</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-instagram w-6 text-zoyno"></i> 
+                            <a href="https://www.instagram.com/zoynobr/" target="_blank" class="hover:text-white transition">@zoynobr</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope w-6 text-zoyno"></i>
+                            <span>contato@zoyno.com.br</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot w-6 text-zoyno"></i>
+                            <span>Uberlândia, MG</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Legal</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="politica-privacidade.html" class="hover:text-white transition">Política de Privacidade</a></li>
+                        <li><a href="termos-de-uso.html" class="hover:text-white transition">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Zoyno Treinamentos. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0 opacity-50">Site Seguro com SSL</p>
+            </div>
+        </div>
+        
+        <!-- Sticky Mobile Button - rota #interesse para Ads -->
+        <div class="fixed bottom-4 left-4 right-4 md:hidden z-50">
+            <a href="#interesse" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-full shadow-2xl flex justify-center items-center text-lg btn-pulse border-2 border-white">
+                <i class="fa-brands fa-whatsapp mr-2 text-2xl"></i> Comprar - R$ 84,99
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts Routing and Logic -->
+    <script>
+        // URL do WhatsApp: ao chegar em #interesse (ad ou clique), redireciona direto
+        const WHATSAPP_URL = 'https://wa.me/5534974004873?text=Olá,%20gostaria%20de%20confirmar%20minha%20inscrição%20no%20curso%20NR10%20com%20desconto.';
+
+        function redirectToWhatsApp() {
+            window.location.href = WHATSAPP_URL;
+        }
+
+        // Função Central de Navegação (Home <-> Interesse)
+        function navigateTo(pageId) {
+            if (pageId === 'interesse') {
+                redirectToWhatsApp();
+                return;
+            }
+            const pages = ['home', 'interesse'];
+            pages.forEach(id => {
+                const el = document.getElementById(id + '-page');
+                if(el) el.classList.add('hidden');
+            });
+            const target = document.getElementById(pageId + '-page');
+            if(target) target.classList.remove('hidden');
+            window.scrollTo(0, 0);
+            history.replaceState(null, null, window.location.pathname || '/');
+        }
+
+        function scrollToSection(sectionId) {
+            // Garante que está na home
+            navigateTo('home');
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if(element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 10);
+        }
+
+        // Ao chegar em #interesse (clique no anúncio ou no botão), redireciona direto para o WhatsApp
+        window.addEventListener('load', () => {
+            if (window.location.hash === '#interesse') redirectToWhatsApp();
+        });
+        window.addEventListener('hashchange', () => {
+            if (window.location.hash === '#interesse') redirectToWhatsApp();
+        });
+    </script>
+</body>
+</html>
