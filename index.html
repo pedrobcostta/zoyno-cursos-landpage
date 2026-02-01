@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso NR10 - Zoyno</title>
+    <meta name="description" content="Curso NR10 Online com Certificado Válido. Regularize-se hoje mesmo com a Zoyno.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zoyno: {
+                            DEFAULT: '#a64aec', // Nova cor da marca
+                            light: '#c06ff5',
+                            dark: '#7e2eb8',
+                            blue: '#2563eb' // Azul para compor o gradiente do logo
+                        },
+                        dark: {
+                            900: '#0f172a', // Azul escuro profundo
+                            800: '#1e293b',
+                            700: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://www.transparenttextures.com/patterns/cubes.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* Fundo Limpo e Profissional com Gradiente */
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+        }
+        
+        /* Padrão sutil sobre o gradiente */
+        .hero-bg::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Efeito de pulso roxo */
+        .btn-pulse {
+            animation: pulse-purple 2s infinite;
+        }
+        @keyframes pulse-purple {
+            0% { box-shadow: 0 0 0 0 rgba(166, 74, 236, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(166, 74, 236, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(166, 74, 236, 0); }
+        }
+
+        /* Gradiente de texto Zoyno */
+        .text-gradient {
+            background: linear-gradient(to right, #2563eb, #a64aec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Estilo para botões com gradiente */
+        .btn-gradient {
+            background: linear-gradient(90deg, #2563eb 0%, #a64aec 100%);
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #1d4ed8 0%, #7e2eb8 100%);
+        }
+        
+        /* Animação suave para imagem */
+        .float-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-slate-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Area -->
+                <div class="flex items-center">
+                    <img src="Design sem nome (2).png" alt="Zoyno Logo" class="h-12 w-auto object-contain mr-2" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'">
+                    <span id="logo-text" class="hidden font-display text-2xl font-bold tracking-tight text-gradient">
+                        Zoyno
+                    </span>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beneficios" class="text-gray-600 hover:text-zoyno font-medium transition">Benefícios</a>
+                    <a href="#conteudo" class="text-gray-600 hover:text-zoyno font-medium transition">Conteúdo</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-zoyno font-medium transition">Quem Somos</a>
+                </div>
+                <div>
+                    <a href="https://wa.me/5534974004873?text=Olá,%20tenho%20interesse%20no%20curso%20de%20NR10%20da%20Zoyno." class="bg-white border-2 border-zoyno text-zoyno hover:bg-zoyno hover:text-white font-bold py-2 px-6 rounded-full transition flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp"></i> Falar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center relative pt-28 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Coluna da Esquerda: Texto -->
+                <div class="text-center md:text-left">
+                    <span class="bg-white/10 backdrop-blur-sm border border-white/20 text-zoyno-light font-semibold py-1 px-4 rounded-full text-sm uppercase tracking-wide mb-6 inline-block">
+                        <i class="fa-solid fa-shield-halved mr-2"></i> Conformidade & Segurança
+                    </span>
+                    <h1 class="font-display text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                        Curso NR10 <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-zoyno-light">Completo e Certificado</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 max-w-lg mx-auto md:mx-0 font-light leading-relaxed">
+                        Garanta sua segurança e regularize sua situação profissional com a <strong>Zoyno</strong>. Certificado válido em todo território nacional com entrega imediata.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="https://wa.me/5534974004873?text=Quero%20aproveitar%20a%20promoção%20do%20Curso%20NR10%20por%2084,99" 
+                           class="btn-pulse btn-gradient text-white text-lg font-bold py-4 px-8 rounded-xl shadow-xl transition transform hover:scale-105 flex items-center justify-center gap-2">
+                            GARANTIR VAGA
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="flex items-center justify-center gap-4 text-gray-400 text-sm mt-2 sm:mt-0">
+                            <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> 100% Online</div>
+                            <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Válido MTE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita: Imagem -->
+                <div class="relative hidden md:block">
+                    <!-- Elementos decorativos de fundo da imagem -->
+                    <div class="absolute -top-10 -right-10 w-72 h-72 bg-zoyno/30 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-600/30 rounded-full blur-3xl"></div>
+                    
+                    <!-- Container da Imagem com efeito Glass -->
+                    <div class="relative bg-white/5 backdrop-blur-sm p-3 rounded-3xl border border-white/10 shadow-2xl float-image">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Eletricista Profissional em ação" 
+                             class="rounded-2xl w-full h-auto object-cover shadow-lg">
+                        
+                        <!-- Card Flutuante -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 border border-gray-100">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center text-green-600">
+                                <i class="fa-solid fa-check-double text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase tracking-wide">Profissional</p>
+                                <p class="text-base font-bold text-gray-900">Qualificado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagem Mobile (aparece abaixo do texto no celular) -->
+                <div class="md:hidden mt-8 relative">
+                     <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Eletricista Profissional" 
+                             class="rounded-2xl w-full shadow-2xl border-4 border-white/10">
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+            <svg class="relative block w-full h-[60px] md:h-[100px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#f8fafc" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-20 bg-slate-50 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-bold text-dark-900 mb-4">Por que escolher a <span class="text-zoyno">Zoyno</span>?</h2>
+                <div class="w-20 h-1.5 bg-gradient-to-r from-zoyno-blue to-zoyno mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-zoyno group-hover:text-white transition-colors duration-300 text-zoyno-blue">
+                        <i class="fa-solid fa-certificate text-3xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-dark-900">Certificado Válido</h3>
+                    <p class="text-gray-600">Reconhecido pelo MTE e válido em todo o Brasil. Fundamental para eletricistas e profissionais da área.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-zoyno group-hover:text-white transition-colors duration-300 text-zoyno">
+                        <i class="fa-solid fa-laptop-code text-3xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-dark-900">100% Online</h3>
+                    <p class="text-gray-600">Estude onde e quando quiser. Nossa plataforma é intuitiva e funciona no seu celular ou computador.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-zoyno group-hover:text-white transition-colors duration-300 text-zoyno-blue">
+                        <i class="fa-solid fa-book-open-reader text-3xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-dark-900">Conteúdo Atualizado</h3>
+                    <p class="text-gray-600">Material didático alinhado com as últimas NBRs e atualizações da NR10.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency/Content Strip -->
+    <section id="conteudo" class="py-20 bg-dark-900 text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-zoyno opacity-20 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-blue-600 opacity-20 rounded-full blur-[100px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="font-display text-4xl font-bold mb-8">O que você vai aprender?</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                        <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                        <span>Segurança em projetos e construções</span>
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                        <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                        <span>Riscos em instalações e serviços elétricos</span>
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                        <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                        <span>Medidas de Controle do Risco Elétrico</span>
+                    </div>
+                    <div class="flex items-center p-3 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition">
+                        <i class="fa-solid fa-check-circle text-zoyno-light mr-4 text-xl"></i> 
+                        <span>Primeiros socorros e combate a incêndio</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pricing Card -->
+            <div class="lg:w-5/12 w-full">
+                <div class="bg-white text-dark-900 rounded-3xl p-8 shadow-2xl relative overflow-hidden border border-gray-100">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-zoyno"></div>
+                    
+                    <div class="text-center mb-8">
+                        <span class="inline-block py-1 px-3 rounded-full bg-red-100 text-red-600 text-xs font-bold uppercase tracking-wider mb-2">Oferta Relâmpago</span>
+                        <h3 class="font-display text-2xl font-bold text-gray-800">Curso NR10 Básico</h3>
+                        <div class="mt-4 flex justify-center items-end gap-2">
+                            <span class="text-gray-400 line-through text-xl decoration-red-500">R$ 169,90</span>
+                            <div class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-dark-900 to-zoyno leading-none">
+                                <span class="text-3xl text-dark-900 align-top">R$</span>84<span class="text-3xl text-dark-900">,99</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-2">Pagamento único • Sem mensalidades</p>
+                    </div>
+                    
+                    <a href="https://wa.me/5534974004873?text=Olá,%20quero%20comprar%20o%20curso%20NR10%20por%2084,99." class="block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl text-center transition shadow-lg hover:shadow-green-500/30 mb-4 text-lg">
+                        <i class="fa-brands fa-whatsapp mr-2"></i> COMPRAR AGORA
+                    </a>
+                    
+                    <div class="flex justify-center gap-4 text-gray-400 text-2xl mt-6 border-t pt-6">
+                        <i class="fa-brands fa-pix hover:text-zoyno transition" title="Pix"></i>
+                        <i class="fa-brands fa-cc-mastercard hover:text-zoyno transition" title="Mastercard"></i>
+                        <i class="fa-brands fa-cc-visa hover:text-zoyno transition" title="Visa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats/Trust -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+                <div>
+                    <div class="text-4xl font-extrabold text-zoyno mb-2">+5.000</div>
+                    <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Alunos Certificados</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-extrabold text-zoyno-blue mb-2">100%</div>
+                    <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Online & Seguro</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-extrabold text-zoyno mb-2">24/7</div>
+                    <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Acesso à Plataforma</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-extrabold text-zoyno-blue mb-2">4.9</div>
+                    <div class="text-gray-500 font-medium text-sm uppercase tracking-wide">Estrelas no Google</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="sobre" class="bg-gray-50 pt-16 pb-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <!-- Logo no rodapé -->
+                         <img src="Design sem nome (2).png" alt="Zoyno Logo" class="h-10 w-auto mr-2 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition" onerror="this.style.display='none'; document.getElementById('footer-logo-text').style.display='block'">
+                         <span id="footer-logo-text" class="hidden font-display text-2xl font-bold text-gray-700">Zoyno</span>
+                    </div>
+                    <p class="text-gray-500 mb-6 leading-relaxed">A Zoyno é especialista em treinamentos normativos e capacitação profissional. Nosso compromisso é com a sua segurança e evolução na carreira.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-dark-900">Fale Conosco</h4>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-center group">
+                            <span class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 group-hover:bg-green-600 group-hover:text-white transition">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                            <a href="https://wa.me/5534974004873" class="hover:text-zoyno transition">(34) 97400-4873</a>
+                        </li>
+                        <li class="flex items-center group">
+                            <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-3 group-hover:bg-blue-600 group-hover:text-white transition">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <span class="hover:text-zoyno transition">contato@zoyno.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-dark-900">Links Úteis</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-zoyno transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="hover:text-zoyno transition">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-zoyno transition">Verificar Certificado</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2025 Zoyno Treinamentos. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0">Desenvolvido com tecnologia de ponta.</p>
+            </div>
+        </div>
+        
+        <!-- Sticky Mobile Button -->
+        <div class="fixed bottom-4 left-4 right-4 md:hidden z-50">
+            <a href="https://wa.me/5534974004873?text=Quero%20meu%20certificado%20NR10%20agora!" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-full shadow-2xl flex justify-center items-center text-lg btn-pulse border-2 border-white">
+                <i class="fa-brands fa-whatsapp mr-2 text-2xl"></i> Comprar - R$ 84,99
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
